@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-
   <string name="google_ad_app_id">ca-app-pub-4420792903234043~4579757896</string>
     <string name="banner_ad_unit_id">ca-app-pub-4420792903234043/2398471207</string>
     <string name="pop_ad_unit_id">ca-app-pub-4420792903234043/3192678122</string>

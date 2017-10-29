@@ -1,0 +1,374 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'liteplayer'
+            keyPassword 'liteplayer'
+            storeFile file('../liteplayer.jks')
+            storePassword 'liteplayer'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "org.test"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 10
+        versionName "1.6"
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+
+    }
+    buildTypes {
+        jingdian {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String','apptype',getAppType('daojiao')
+            signingConfig signingConfigs.release
+             applicationIdSuffix '.music'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME      : "@string/oldsong_name",
+                    APP_ICON      : "@drawable/ic_launcher",
+            ]
+        }
+        daojiao {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String','apptype',getAppType('daojiao')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.music.daojiao"
+            applicationIdSuffix '.music.daojiao'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME      : "@string/daojioa_name",
+                    APP_ICON      : "@drawable/daojiao_icon",
+            ]
+        }
+        oldsong {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String','apptype',getAppType('oldsong')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.oldsong"
+            applicationIdSuffix '.music.oldsong'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME      : "@string/oldsong_name",
+                    APP_ICON      : "@drawable/oldsong",
+            ]
+        }
+
+        dizi {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String','apptype',getAppType('dizi')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.mydizi
+            applicationIdSuffix '.mydizi'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME      : "@string/dizi_name",
+                    APP_ICON      : "@drawable/dizi",
+            ]
+        }
+        dizixiaoqu {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String','apptype',getAppType('dizixiaoqu')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.music."
+            applicationIdSuffix '.music.dizixiaoqu'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME      : "@string/dizixiaoqu_name",
+                    APP_ICON      : "@drawable/dizixiaoqu",
+            ]
+        }
+        dizixiaoqujinghua {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String','apptype',getAppType('dizixiaoqujinghua')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.music.dzxqjh"
+            applicationIdSuffix '.music.dzxqjh'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME      : "@string/dizixiaoqu_name",
+                    APP_ICON      : "@drawable/dizixiaoqu",
+            ]
+        }
+        erhumingqu {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('erhumingqu')
+            signingConfig signingConfigs.release
+//            applicationIdSuffix '.erhumingqu'
+            applicationIdSuffix '.erhumingqu'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/erhu300_name",
+                    APP_ICON: "@drawable/erhu",
+            ]
+        }
+        erhumingqu300 {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('erhumingqu300')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.erhumingqu"
+            applicationIdSuffix '.erhumingqu300'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/erhu300_name",
+                    APP_ICON: "@drawable/erhu",
+            ]
+        }
+        erhuxiaoqu {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('erhuxiaoqu')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.erhuxiaoqu"
+            applicationIdSuffix '.erhuxiaoqu'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/erhuxiaoqu_name",
+                    APP_ICON: "@drawable/xiao",
+            ]
+        }
+        fojiaoheji {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('fojiaoheji')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.fojiaoheji"
+            applicationIdSuffix '.fojiaoheji'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/fojiaoheji_name",
+                    APP_ICON: "@drawable/fojiaoheji",
+            ]
+        }
+
+
+        fojiaoyinyue {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('fojiaoyinyue')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.fojiaoyinyue"
+            applicationIdSuffix '.fojiaoyinyue'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/fojiaoyinyue_name",
+                    APP_ICON: "@drawable/fojiaoyinyue",
+            ]
+        }
+        gangqing100 {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('gangqing100')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.gangqing100"
+            applicationIdSuffix '.gangqing100'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/gangqing_name",
+                    APP_ICON: "@drawable/gangqing",
+            ]
+        }
+        geminggequ {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('geminggequ')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.geminggequ"
+            applicationIdSuffix '.geminggequ'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/geminggequ_name",
+                    APP_ICON: "@drawable/red",
+            ]
+        }
+        guangchangwu {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('guangchangwu')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.guangchangwu"
+            applicationIdSuffix '.guangchangwu'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/wuchangwu",
+                    APP_ICON: "@drawable/gicon",
+            ]
+        }
+        guzheng200 {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('guzheng200')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.guzheng"
+            applicationIdSuffix '.guzheng'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/guzheng_name",
+                    APP_ICON: "@drawable/guzheng",
+            ]
+        }
+        hulusi {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('hulusi')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.hulusi"
+            applicationIdSuffix '.hulusi'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/hulusi_name",
+                    APP_ICON: "@drawable/hulusi",
+            ]
+        }
+        mingnan {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('mingnan')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.mingnan"
+            applicationIdSuffix '.mingnan'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/app_name",
+                    APP_ICON: "@drawable/minnan",
+            ]
+        }
+        sakesi {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('sakesi')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.sakesi"
+            applicationIdSuffix '.sakesi'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/sakesi_name",
+                    APP_ICON: "@drawable/sakesi",
+            ]
+        }
+        saoer {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('saoer')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.shaoergequ"
+            applicationIdSuffix '.shaoergequ'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/saoer_name",
+                    APP_ICON: "@drawable/saoer",
+            ]
+        }
+        shijigushi {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('shijigushi')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.shijigushi"
+            applicationIdSuffix '.shijigushi'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/shijigushi_name",
+                    APP_ICON: "@drawable/shijigushi_launcher",
+            ]
+        }
+        yingwenerge {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('yingwenge')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.childenglishsong"
+            applicationIdSuffix '.childenglishsong.oldsong'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/yingwen_name",
+                    APP_ICON: "@drawable/yingwenerge",
+            ]
+        }
+        yueyu {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('yueyu')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.yueyu"
+            applicationIdSuffix '.yueyu'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/yueyu_name",
+                    APP_ICON: "@drawable/gicon",
+            ]
+        }
+        liuxing {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'apptype', getAppType('yueyu')
+            signingConfig signingConfigs.release
+//            applicationId "org.loader.yueyu"
+            applicationIdSuffix '.liuxingmusic'
+            debuggable false
+            manifestPlaceholders = [
+                    APP_NAME: "@string/liuxing",
+                    APP_ICON: "@drawable/liuxing",
+            ]
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField 'String', 'apptype', getAppType('mingnan')
+            debuggable true
+            manifestPlaceholders = [
+                    APP_NAME: "@string/app_name",
+                    APP_ICON: "@drawable/minnan",
+            ]
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace(".apk", "-${defaultConfig.versionName}.apk")
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+}
+def getAppType(String env){
+    def apptype
+    def Properties props = new Properties()
+    def propFile=file('../properties/'+env+'/config.properties')
+    if (propFile.canRead()){
+        props.load(new FileInputStream(propFile))
+        if (props != null) {
+            apptype=props['APP_TYPE']
+        }
+    }
+    apptype
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:26.0.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:recyclerview-v7:26.0.+'
+    compile 'com.android.support:design:26.0.+'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.google.firebase:firebase-ads:11.0.0'
+    compile 'com.google.android.gms:play-services-ads:11.0.0'
+    compile files('libs/ormlite-android-4.48.jar')
+    compile files('libs/ormlite-core-4.48.jar')
+}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+    <!--
+  Main / media select activity
+  -->
+        <string name="set_ring_grant">Ring set permission has been allowed</string>
+        <string name="set_ring_not_grant">Please onpen setting page to allow set ring permission</string>
+    <string name="main_activity_label">Song</string>
+    <string name="bad_extension_error">Sorry</string>
+    <string name="search_edit_box">Search</string>
+
+    <string name="button_start_record_activity">new record</string>
+
+    <string name="sdcard_readonly">sorry ,you haven\'t music file </string>
+    <string name="no_sdcard">sorry ,you haven\'t sd card </string>
+    <string name="sdcard_shared">sorry ,when you connect usb  ,this app cann\'t run</string>
+
+    <string name="button_options">choice</string>
+
+    <!--
+     Edit activity
+     -->
+
+    <!-- Labels next to the start and end time edit boxes -->
+    <string name="start_label">Start:</string>
+    <string name="end_label">End:</string>
+
+    <string name="edit_intent">edit</string>
+
+    <string name="time_seconds">seconds</string>
+
+    <!-- After you save a notification or ringtone and have more options
+         for what to do with them -->
+    <string name="what_to_do_with_ringtone">have save  ,do you want to save as special person ring ？</string>
+    <string name="set_default_notification">Have saved,do you wan\'t to save as default？</string>
+    <string name="make_default_ringtone_button">Save default</string>
+    <string name="choose_contact_ringtone_button">to contacts</string>
+    <string name="do_nothing_with_ringtone_button">Close</string>
+    <!-- Progress dialog text for loading or saving... -->
+    <string name="progress_dialog_loading">loading...</string>
+    <string name="progress_dialog_saving">keeping...</string>
+
+    <!-- Image button descriptions for accessibility -->
+
+    <string name="start_marker">start record</string>
+    <string name="end_marker">end record</string>
+    <string name="rewind">reback</string>
+    <string name="play">start</string>
+    <string name="stop">pause</string>
+    <string name="ffwd">speed</string>
+    <string name="zoom_in">amplify</string>
+    <string name="zoom_out">reduce</string>
+    <string name="save_button">save</string>
+
+    <!--
+     Menu items
+     -->
+
+    <string name="menu_save">save</string>
+    <string name="menu_reset">set agin</string>
+    <string name="menu_about">about</string>
+    <string name="menu_show_all_audio">show all music</string>
+
+    <!--
+     Context menu items
+     -->
+
+    <string name="context_menu_edit">edit </string>
+    <string name="context_menu_delete">delete</string>
+    <string name="context_menu_default_ringtone">set as default ring</string>
+    <string name="context_menu_contact">to special person</string>
+    <string name="context_menu_default_notification">set as default ring</string>
+
+    <!--
+     File Save dialog
+     -->
+
+    <string name="file_save_title">save as:</string>
+    <string name="file_save_button_save">save</string>
+    <string name="file_save_button_cancel">cancle</string>
+
+    <string name="ringtone_type_label">type:</string>
+
+    <string name="type_music">music</string>
+    <string name="type_alarm">warn</string>
+    <string name="type_notification">notice</string>
+    <string name="type_ringtone">ring</string>
+
+    <string name="ringtone_name_label">label:</string>
+
+
+    <!--
+     Delete confirmation dialog
+     -->
+
+    <string name="delete_ringtone">delete ring</string>
+    <string name="delete_alarm">delete alarm</string>
+    <string name="delete_notification">delete notice</string>
+    <string name="delete_music">delete music</string>
+    <string name="delete_audio">delete audio</string>
+
+    <string name="confirm_delete_ringdroid">are you sure?</string>
+    <string name="confirm_delete_non_ringdroid"
+    >are you sure !</string>
+
+    <string name="delete_ok_button">delete </string>
+    <string name="delete_cancel_button">cancle</string>
+
+    <string name="delete_failed">can\'t delete file</string>
+
+    <!--
+     Success and error messages
+     -->
+
+    <string name="alert_title_success">success</string>
+    <string name="alert_title_failure">error</string>
+    <string name="alert_ok_button">confirm</string>
+    <string name="alert_yes_button">sure!</string>
+    <string name="alert_no_button">it\'s a pleasure</string>
+
+    <string name="save_success_message">save ok!</string>
+    <string name="default_ringtone_success_message">change default ring</string>
+    <string name="default_notification_success_message">change default notic </string>
+    <string name="play_error">can\'t open </string>
+    <string name="no_unique_filename"> can\'t  find file</string>
+    <string name="delete_tmp_error">delete file error</string>
+    <string name="record_error">start record error</string>
+    <string name="too_small_error">the file is too small,please try biger file</string>
+    <string name="write_error">write file error</string>
+    <string name="read_error">read file error</string>
+
+    <string name="no_space_error">your sd card is full ,please  delete some</string>
+
+
+    <string name="no_extension_error">sorry ,only  support mp3 or wav</string>
+
+    <!--
+     Choose Contact Activity
+     -->
+
+    <string name="choose_contact_title">set ring to which person？</string>
+    <string name="success_contact_ringtone">set ring success：</string>
+
+    <!--
+     Sending information to server
+     -->
+    <string name="server_title">share your data！</string>
+    <string name="server_prompt">do you want to share you app</string>
+    <string name="server_yes">yes</string>
+    <string name="server_later">ask latter</string>
+    <string name="server_never">no</string>
+    <string name="share">share app</string>
+    <string name="share_message">if you think this  app is fair to middling ，https://play.google.com/store/apps/details?id=org.loader can download</string>
+    <string name="error_server_prompt">about</string>
+
+    <!--
+     About
+     -->
+    <string name="make_ring">make ring</string>
+    <string name="about_title">favourable comment</string>
+    <string name="about_text">if you think this  app is fair to middling ,please high opinion </string>
+
+<array name="playdialog">
+    <item>make ring</item>
+    <item>high opinion</item>
+    <item>share app</item>
+    <item>more app</item>
+</array>
+
+</resources>

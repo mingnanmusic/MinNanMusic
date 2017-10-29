@@ -1,0 +1,27 @@
+1、dependencies {
+      compile fileTree(include: ['*.jar'], dir: 'libs')
+      compile 'com.android.support:appcompat-v7:26.0.+'
+      compile 'com.android.support.constraint:constraint-layout:1.0.2'
+      compile 'com.android.support:recyclerview-v7:26.0.+'
+      compile 'com.android.support:design:26.0.+'
+      compile 'org.greenrobot:eventbus:3.0.0'
+      compile 'com.zhy:okhttputils:2.6.2'
+  //    compile 'com.google.firebase:firebase-ads:11.0.0'
+      compile 'com.google.android.gms:play-services-ads:11.0.0'
+  }
+  //apply plugin: 'com.google.gms.google-services'
+
+  去掉firebase   和google service,可以不需要json文件
+
+
+  后期增加功能
+
+  解决  File file = new File(MusicUtils.getAppLocalDir());//可以把    这一行空指针
+
+  把所有代码合并，动态改变包名，动态改变google  appid  ,动态改变歌曲名字，图标
+
+  00  列表添加 编码    歌曲可以搜索，可以在线听先不下载,听完缓存
+  0、本地缓存歌曲列表、歌词
+  1、设置手机铃声
+  2、分享
+  3、唱歌对比原声,歌曲上传（第三方接口）,演唱歌曲分享

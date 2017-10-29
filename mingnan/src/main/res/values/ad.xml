@@ -2,10 +2,9 @@
 <resources>
 
 
-
-   <string name="google_ad_app_id">ca-app-pub-4420792903234043~5051263704</string>
-    <string name="banner_ad_unit_id">ca-app-pub-4420792903234043/9054087891</string>
-    <string name="pop_ad_unit_id">ca-app-pub-4420792903234043/9892526842</string>
+  <string name="google_ad_app_id">ca-app-pub-4420792903234043~4579757896</string>
+    <string name="banner_ad_unit_id">ca-app-pub-4420792903234043/2398471207</string>
+    <string name="pop_ad_unit_id">ca-app-pub-4420792903234043/3192678122</string>
 
 <!--
 
@@ -89,9 +88,7 @@
 
 
     &lt;!&ndash;&#45;&#45;kids song-&ndash;&gt;
-    <string name="google_ad_app_id">ca-app-pub-4420792903234043~4579757896</string>
-    <string name="banner_ad_unit_id">ca-app-pub-4420792903234043/2398471207</string>
-    <string name="pop_ad_unit_id">ca-app-pub-4420792903234043/3192678122</string>
+  
 -->
 
 
